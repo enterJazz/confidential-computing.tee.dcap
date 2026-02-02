@@ -788,6 +788,8 @@ quote3_error_t tee_verify_quote(
     uint32_t tmp_size = 0;
     uint8_t *p_supp_data = NULL;
 
+    compile err
+
     // only check quote, other parameters will be checked in internal functions
     if (CHECK_MANDATORY_PARAMS(p_quote, quote_size) ||
          quote_size < QUOTE_MIN_SIZE)
